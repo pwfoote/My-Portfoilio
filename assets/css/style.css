@@ -1,0 +1,57 @@
+body {
+    font-family: georgia; serif;
+}
+
+header {
+    padding: 10px 15px 20px 25px;
+    background-color: dimgray;
+}
+
+header h1 {
+    font-weight: bold;
+    font: size 40px;
+    display: inline;
+    margin: 10px;
+    color: white;
+}
+
+header nav {
+    float: right;
+    margin: 7px 0;
+    color: ;
+}
+
+header nav ul li {
+    display: inline;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+/* profile pic about me */
+
+.profile-pic img {
+    width: 20%;
+    float: left;
+    border-radius: 35%;
+    background-color: dimgray;
+    padding: 5px;
+    margin: 10px 0 0 10px;
+    
+}
+
+article p{
+   margin: 10px 10px 10px 10px; 
+   border: 10px 10px 10px 10px
+}
+
+/*Projects */
+
+projects {
+    flex-direction: row;
+}
