@@ -3,55 +3,86 @@ body {
 }
 
 header {
-    padding: 10px 15px 20px 25px;
+    padding: 10px 10px 10px 10px;
     background-color: dimgray;
 }
 
 header h1 {
-    font-weight: bold;
     font: size 40px;
     display: inline;
-    margin: 10px;
+    text-decoration: underline;
+    text-decoration-color: tomato;
+    margin: 0px;
     color: white;
 }
 
 header nav {
     float: right;
-    margin: 7px 0;
-    color: ;
+    margin: -15px 0 0px 0;
+    color: white;
+   
 }
 
 header nav ul li {
     display: inline;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: tomato;
     font-size: 30px;
 }
 
 header a {
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: tomato;
     color: white;
     
 }
 
+header nav :hover {
+   color: tomato;
+   text-decoration: underline;
+   text-decoration-color: tomato ;
+}
+
 /* profile pic about me */
 
-.profile-pic img {
+.profile img {
     width: 20%;
     float: left;
     border-radius: 35%;
     background-color: dimgray;
     padding: 5px;
     margin: 10px 0 0 10px;
-    
 }
 
-article p{
-   margin: 10px 10px 10px 10px; 
-   border: 10px 10px 10px 10px
+.about-me {
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    display: inline;
+}
+
+.about-me h2 { 
+    margin: 10px 0 0 0;
+    float: :left;
 }
 
 /*Projects */
 
-projects {
-    flex-direction: row;
+.grid-container {
+    display: grid;
+    grid-template-rows: 40px 40px 40px 40px;
+    
+}
+
+.grid-item {
+    border: 5px 5px 5px 5px;
+    margin: auto;
+    border-color: black;
+}
+
+/*footer */
+
+footer{
+    padding: 10px 15px 20px 25px;
+    background-color: dimgray;
+
 }
