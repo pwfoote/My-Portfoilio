@@ -6,7 +6,7 @@
 
 
 body {
-    font-family: georgia; serif;
+    font-family: georgia; 
 }
 
 header {
@@ -19,7 +19,7 @@ header h1 {
     display: inline;
     text-decoration: underline;
     text-decoration-color: tomato;
-    margin: 0px;
+    margin-left: 20px;
     color: white;
 }
 
@@ -69,6 +69,10 @@ header nav :hover {
     flex-basis: auto;
 }
 
+.about-me p {
+    margin: 10px 10px 10px 10px;
+}
+
 .profile-pic img {
     width: 25%;
     float: left;
@@ -78,39 +82,40 @@ header nav :hover {
     background-color: dimgray;
 }
 
+/*aside */
+
+
 
 /*Projects */
 .project-container {
-    position: relative;
-    padding: 40px 10px 60px 10px;
-    
+    display: inline-block;
+    margin-left: 425px;
 }
-
 .project-container h2 {
   text-align: center;
   text-decoration: underline;
-  flex-basis: auto;
   padding-bottom: 5px;
+  margin: 0 0 0 415px ;
 }
 
 .project-item img {
-    height: 25%;
-    width: 25%;
-    border-radius: 15%;
+    max-width: 25%;
+    border-radius: 8px;
     padding: 5px;
     background-color: tomato;
-    position: relative;
-    margin: 15px 0px -3px 20px;
-    flex-shrink: 25%;
-    flex-grow: 25%;
-    flex-direction: row;
 }
 
 .project-item a img:hover {
    background-color: dimgray;
 }
 
-
+/*art */
+.art-container h2 {
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 5px;
+    margin: 0 0 0 365px;
+  }
 
 
 /*footer */
