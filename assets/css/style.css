@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0 5px 0 5px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -10,23 +10,29 @@ body {
 }
 
 header {
-    padding: 10px 10px 10px 10px;
     background-color: dimgray;
+    border-radius: 8px;
 }
 
 header h1 {
-    font: size 40px;
-    display: inline;
+    font-size: 40px;
     text-decoration: underline;
     text-decoration-color: tomato;
-    margin-left: 20px;
+    color: white;
+    display: inline;
+}
+
+header a {
+    text-decoration: underline;
+    text-decoration-color: tomato;
     color: white;
 }
 
 header nav {
     float: right;
-    margin: 0px 0px 0px 0px;
     color: white;
+    text-decoration: underline;
+    text-decoration-color: tomato;
    
 }
 
@@ -34,52 +40,56 @@ header nav ul li {
     display: inline;
     text-decoration: underline;
     text-decoration-color: tomato;
-    font-size: 30px;
-}
-
-header a {
-    text-decoration: underline;
-    text-decoration-color: tomato;
-    color: white;
-    
+    font-size: 33px;
+    margin: 0 5px 0px -25px;
 }
 
 header nav :hover {
    color: tomato;
    text-decoration: underline;
-   text-decoration-color: tomato ;
+   text-decoration-color: tomato;
 }
 
-/* profile pic about me */
-.about-me {
-    margin: 100px 100px 100px 100px;
-}
+   footer {
+    background: dimgray;
+    width: 100%;
+    padding: 40px 35px;
+  }
 
+  footer h2 {
+    display: inline;
+    color: white;
+    font-size: 30px;
+    margin: 0;
+  }
+
+/* profile pic -- about me */
 .about-me {
-    margin: 25px 10px 30px 10px;
-    padding: 10px 15px 20px 0px;
+    height: 350px;
+    background-color: dimgray;
+    position: relative;
     text-align: center;
-    ;
+    border-radius: 8px;
+    
 }
 
 .about-me h2 { 
-    margin: 5px 0 0px 10px;
+    margin: 5px 95px 0px 10px;
+    position: relative;
+    text-align: center;
+    color: white;
     text-decoration:underline;
-    text-decoration-color: black;
-    flex-basis: auto;
-}
-
-.about-me p {
-    margin: 10px 10px 10px 10px;
+    text-decoration-color: tomato;
 }
 
 .profile-pic img {
     width: 25%;
     float: left;
     border-radius: 16%;
-    padding: 5px;
-    margin: 10px 0 0 10px;
-    background-color: dimgray;
+    padding: 5px 8px;
+    margin: 0px 5px 0 10px;
+    background-color:tomato;
+    justify-content: center;
 }
 
 /*aside */
@@ -88,20 +98,21 @@ header nav :hover {
 
 /*Projects */
 .project-container {
-    display: inline-block;
-    margin-left: 425px;
+    display: center;
+   margin-right:51px ;
 }
 .project-container h2 {
   text-align: center;
   text-decoration: underline;
   padding-bottom: 5px;
-  margin: 0 0 0 415px ;
+ 
 }
 
 .project-item img {
     max-width: 25%;
     border-radius: 8px;
     padding: 5px;
+    justify-content: center;
     background-color: tomato;
 }
 
