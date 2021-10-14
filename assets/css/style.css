@@ -110,11 +110,13 @@ footer nav :hover {
    text-decoration-color: tomato;
 }
 
-
+main {
+    flex: auto;
+}
 
 /* profile pic -- about me */
 .about-me {
-    height: 350px;
+    height: 300px;
     background-color: dimgray;
     border-radius: 8px;
     border-style: solid;
@@ -134,24 +136,22 @@ footer nav :hover {
 
 .about-me p{
     margin:5px 0 15px 0;
+    text-align: center;
     font-weight: bold;
     color: white;
 }
 
 
 .profile-pic img {
-    width: 25%;
+    width: 30%;
     float: left;
     border-radius: 16%;
+    margin-top: -15px;
     padding: 5px 8px;
-    margin: 0px 5px 0 10px;
     background-color:tomato;
-    justify-content: center;
+    flex-direction: row;
+    
 }
-
-/*aside */
-
-
 
 /*Projects */
 .project-container {
@@ -159,6 +159,7 @@ footer nav :hover {
  border-radius: 8px;
  margin-top: 15px;
  border-style: solid;
+ flex-direction: row;
 }
 
 .project-container h2 {
@@ -171,7 +172,6 @@ footer nav :hover {
 }
 
 .project-item img {
-    display: flex; 
     max-width: 24%;
     border-radius: 8px;
     padding: 5px;
@@ -203,6 +203,14 @@ footer nav :hover {
     text-decoration:underline;
     text-decoration-color: tomato;
   }
+
+  .art-item img{
+    max-width: 20%;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 0 0 0 0;
+    background-color: tomato;
+}
 
 
 /*footer */
