@@ -7,9 +7,13 @@
 
 body {
     font-family: georgia; 
+    
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     background-color: dimgray;
     border-radius: 8px;
     border-style: solid;
@@ -36,7 +40,13 @@ header nav {
     color: white;
     text-decoration: underline;
     text-decoration-color: tomato;
-   
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
 }
 
 header nav ul li {
@@ -55,18 +65,20 @@ header nav :hover {
 
 /* footer */
    footer {
-    background: dimgray;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: dimgray;
+    border-radius: 8px;
     border-style: solid;
-  }
-
+    margin-top: 10px;
+}
+  
   footer h2 {
     display: inline;
     color: white;
     font-size: 30px;
-    margin: 0;
+    margin-left: 10px;
   }
 
   footer a {
@@ -81,6 +93,12 @@ footer nav {
     text-decoration: underline;
     text-decoration-color: tomato;
    
+}
+
+footer nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
 }
 
 footer nav ul li {
@@ -109,10 +127,8 @@ footer nav :hover {
    text-decoration: underline;
    text-decoration-color: tomato;
 }
+/* main */
 
-main {
-    flex: auto;
-}
 
 /* profile pic -- about me */
 .about-me {
@@ -136,21 +152,19 @@ main {
 
 .about-me p{
     margin:5px 0 15px 0;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     color: white;
 }
 
 
 .profile-pic img {
-    width: 30%;
+    width: 20%;
     float: left;
     border-radius: 16%;
     margin-top: -15px;
     padding: 5px 8px;
     background-color:tomato;
-    flex-direction: row;
-    
 }
 
 /*Projects */
@@ -159,7 +173,6 @@ main {
  border-radius: 8px;
  margin-top: 15px;
  border-style: solid;
- flex-direction: row;
 }
 
 .project-container h2 {
@@ -171,16 +184,15 @@ main {
     text-decoration-color: tomato;
 }
 
+.project-container div {
+    flex: row;
+}
 .project-item img {
     max-width: 24%;
     border-radius: 8px;
     padding: 5px;
     margin: 0 0 0 0;
     background-color: tomato;
-}
-
-.project-item img * {
-    flex-basis: 100%;
 }
 
 .project-item a img:hover {
@@ -213,10 +225,22 @@ main {
 }
 
 
-/*footer */
+/*contact*/
 
-footer{
+.contact-form {
+    margin-top: 15px;
+    margin-bottom: 15px;
     background-color: dimgray;
     border-radius: 8px;
+    border-style: solid;
+    color: black;
+}
 
+.contact-form h2 {
+    margin: 0 15px 0 15px; 
+    padding-bottom: 15px;
+    color: white;
+    text-align: center;
+    text-decoration:underline;
+    text-decoration-color: tomato;
 }
