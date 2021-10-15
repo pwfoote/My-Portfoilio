@@ -25,7 +25,9 @@ header h1 {
     text-decoration: underline;
     text-decoration-color: tomato;
     color: white;
-    display: inline;
+    display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
 }
 
 header a {
@@ -132,13 +134,11 @@ footer nav :hover {
 
 /* profile pic -- about me */
 .about-me {
-    height: 300px;
+    height: 280px;
     background-color: dimgray;
     border-radius: 8px;
     border-style: solid;
     margin-top: 10px;
-   
-    
 }
 
 .about-me h2 { 
@@ -152,9 +152,13 @@ footer nav :hover {
 
 .about-me p{
     margin:5px 0 15px 0;
-    text-align: left;
     font-weight: bold;
     color: white;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    font-size: 1.2vw;
 }
 
 
