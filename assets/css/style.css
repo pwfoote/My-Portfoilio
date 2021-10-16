@@ -1,5 +1,5 @@
 *{
-    margin: 0 5px 0 5px;
+    margin: 0 35px 0 35px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -7,13 +7,20 @@
 
 body {
     font-family: georgia; 
+    
 }
 
 header {
     background-color: dimgray;
     border-radius: 8px;
-    border-style: solid;
     margin-top: 10px;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-style: solid;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 header h1 {
@@ -21,7 +28,6 @@ header h1 {
     text-decoration: underline;
     text-decoration-color: tomato;
     color: white;
-    display: inline;
 }
 
 header a {
@@ -32,15 +38,20 @@ header a {
 
 header nav {
     margin-top: 6px;
-    float: right;
+    flex: flex-end;
     color: white;
     text-decoration: underline;
     text-decoration-color: tomato;
-   
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
 }
 
 header nav ul li {
-    display: inline;
     text-decoration: underline;
     text-decoration-color: tomato;
     font-size: 33px;
@@ -55,18 +66,21 @@ header nav :hover {
 
 /* footer */
    footer {
-    background: dimgray;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 40px 35px;
+    display: flex;
+    flex-direction: column;
+    background-color: dimgray;
+    border-radius: 8px;
     border-style: solid;
-  }
-
+    margin-top: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+  
   footer h2 {
     display: inline;
     color: white;
     font-size: 30px;
-    margin: 0;
+    margin-left: 10px;
   }
 
   footer a {
@@ -81,6 +95,13 @@ footer nav {
     text-decoration: underline;
     text-decoration-color: tomato;
    
+}
+
+footer nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
 }
 
 footer nav ul li {
@@ -109,25 +130,20 @@ footer nav :hover {
    text-decoration: underline;
    text-decoration-color: tomato;
 }
+/* main */
 
-main {
-    flex: auto;
-}
 
 /* profile pic -- about me */
-.about-me {
-    height: 300px;
+.profile {
+    height: 350px;
     background-color: dimgray;
     border-radius: 8px;
     border-style: solid;
     margin-top: 10px;
-   
-    
 }
 
-.about-me h2 { 
+.profile h2 { 
     margin: 0 15px 0 15px; 
-    padding-bottom: 15px;
     text-align: center;
     color: white;
     text-decoration:underline;
@@ -136,54 +152,73 @@ main {
 
 .about-me p{
     margin:5px 0 15px 0;
-    text-align: center;
     font-weight: bold;
     color: white;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    font-size: 1.2vw;
 }
 
 
 .profile-pic img {
-    width: 30%;
+    width: 450px;
+    height: 330px;
+    margin: -26px 20px 0px -26px;
     float: left;
     border-radius: 16%;
-    margin-top: -15px;
+    margin-top: 0 0 0 0;
     padding: 5px 8px;
     background-color:tomato;
-    flex-direction: row;
-    
 }
 
 /*Projects */
+
 .project-container {
- background-color: dimgray;
- border-radius: 8px;
- margin-top: 15px;
- border-style: solid;
- flex-direction: row;
-}
+    background-color: dimgray;
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 10px 0 10px 0;
+    border: solid;
+    border-color: black;
+   }
 
 .project-container h2 {
-    margin: 0 15px 0 15px; 
-    padding-bottom: 15px;
-    text-align: center;
+    margin: 0 15px 15px 15px; 
     color: white;
     text-decoration:underline;
     text-decoration-color: tomato;
+    text-align: center;
 }
 
-.project-item img {
-    max-width: 24%;
+.project-grid {
+    display: flex;
+    width:90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-item {
+    display: block;
+    width: 400px;
+    height: 230px;
+    flex-basis: 100%;
     border-radius: 8px;
     padding: 5px;
     margin: 0 0 0 0;
     background-color: tomato;
 }
 
-.project-item img * {
-    flex-basis: 100%;
+@media only screen and (min-width: 640px) {
+    .project-item {
+        flex-basis: 50%;
+    }
+
 }
 
-.project-item a img:hover {
+.project-grid a :hover {
    background-color: black;
 }
 
@@ -191,6 +226,7 @@ main {
 .art-container{
     margin-top: 15px;
     margin-bottom: 15px;
+    padding-bottom: 15px;
     background-color: dimgray;
     border-radius: 8px;
     border-style: solid;
@@ -204,19 +240,53 @@ main {
     text-decoration-color: tomato;
   }
 
-  .art-item img{
-    max-width: 20%;
+  .art-grid{
+    display: flex;
+    width:90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .art-item{
+    display: block;
+    height:4.69in;
+    flex-basis: 25%;
     border-radius: 8px;
     padding: 5px;
     margin: 0 0 0 0;
-    background-color: tomato;
+    background-color: tomato
 }
 
 
-/*footer */
+/*contact*/
 
-footer{
+.contact-me {
+    margin-top: 15px;
+    margin-bottom: 15px;
     background-color: dimgray;
     border-radius: 8px;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+}
 
+.contact-me h2 {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: tomato;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
 }
