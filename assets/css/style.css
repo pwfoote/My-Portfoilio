@@ -14,7 +14,6 @@ header {
     background-color: dimgray;
     border-radius: 8px;
     margin-top: 10px;
-    border-style: solid;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -68,7 +67,6 @@ header nav :hover {
     background-color: dimgray;
     border-radius: 8px;
     margin-top: 10px;
-    border-style: solid;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -141,7 +139,6 @@ footer nav :hover {
     height: 330px;
     margin: -15px 0 10px 0;
     border-radius: 16%;
-    margin-top: 0 0 0 0;
     padding: 5px 8px;
     background-color:tomato;
 }
@@ -169,7 +166,6 @@ footer nav :hover {
     border-radius: 8px;
     margin-top: 15px;
     padding: 10px 0 10px 0;
-    border: solid;
    }
 
 .project-container h2 {
@@ -232,7 +228,6 @@ footer nav :hover {
     padding-bottom: 15px;
     background-color: dimgray;
     border-radius: 8px;
-    border-style: solid;
 }
 .art-container h2 {
     margin: 0 15px 0 15px; 
@@ -268,7 +263,6 @@ footer nav :hover {
     margin-bottom: 15px;
     background-color: dimgray;
     border-radius: 8px;
-    border-style: solid;
     border-color: black;
     display: flex;
     flex-wrap: wrap;
