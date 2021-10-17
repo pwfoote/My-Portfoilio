@@ -124,52 +124,42 @@ footer nav :hover {
 
 
 /* profile pic -- about me */
-.profile {
-    height: 350px;
-    background-color: dimgray;
-    border-radius: 8px;
-    border-style: solid;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.profile-container {
+    margin: 20px 95px 20px 95px;
 }
 
-.profile h2 { 
-    margin: 0 15px 0 15px; 
+.profile-container h2 { 
+    margin: 10px 0px 25px  0px; 
     text-align: center;
     color: white;
     text-decoration:underline;
     text-decoration-color: tomato;
-    display:flex;
-    flex-wrap: wrap;
 }    
+
+.about-me img{
+    width: 450px;
+    height: 330px;
+    margin: -15px 0 10px 0;
+    border-radius: 16%;
+    margin-top: 0 0 0 0;
+    padding: 5px 8px;
+    background-color:tomato;
+}
 
 .about-me {
     margin:5px 0 15px 0;
     font-weight: bold;
     color: white;
     display: flex;
+    width:90%;
+    margin: 0 auto;
     flex-wrap: wrap;
-    font-size: 1.2vw;
-    flex-shrink: 2;
+    justify-content: center;
 }
 
-
-.profile-pic img {
-    width: 450px;
-    height: 330px;
-    margin: -26px 20px 0px -26px;
-    float: left;
-    border-radius: 16%;
-    margin-top: 0 0 0 0;
-    padding: 5px 8px;
-    background-color:tomato;
-    display:flex;
-    flex-wrap: wrap;
-    flex-shrink: 2;
+.about-me p{
+    text-align: center;
+    line-height: 1.5;
 }
 
 /*Projects */
@@ -258,7 +248,7 @@ footer nav :hover {
     width:90%;
     margin: 0 auto;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
   .art-item{
